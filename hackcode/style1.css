@@ -1,0 +1,153 @@
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+.nav {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav:hover {
+  background-color: #111;
+}
+
+/*-----------------------popup blocks using----------------------------------
+
+*{margin:0px; padding:0px; font-family:Helvetica, Arial, sans-serif;}
+
+/* Full-width input fields */
+input[type=text], h3 {
+    width: 87%;
+    padding: 12px 20px;
+    margin: 8px 26px;
+   
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+	font-size:16px;
+}
+.search-btn{
+	width:10%;
+	height:40px;
+	margin-top:1%;
+	margin-right:2%;
+}
+
+
+/* The Modal (background) */
+.modal {
+	display:none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+	
+}
+
+/* Modal Content Box */
+.modal-content {
+	overflow:auto;
+    background-color: #e6e6e6;
+    margin: 4% auto 15% auto;
+    border: 1px solid #888;
+    width: 80%; 
+	height:400px;;
+	padding-bottom: 30px;
+	margin-top:5%;
+	
+	
+}
+
+
+
+/* Add Zoom Animation */
+.animate {
+    animation: zoom 0.6s
+}
+@keyframes zoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+/*---------------------------container------------------------------------*/
+
+.users-box{
+	
+	width:60%;
+	height:400px;
+	background-color:#ffffff;
+	overflow:auto;
+	border: 1px solid #ccc;
+	
+	 padding: 2% 5%;
+	 margin: 5% 10%;
+    
+}
+
+
+/* ALL USERS */
+
+.all_users .usersWrapper{   
+    display: flex;
+
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.all_users .user_box{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    border: 1px solid rgba(23,23,23, .2);
+    margin: 5px;
+    padding: 5px;
+    width: 30%;
+    background-color: #FFF;
+    align-items: stretch;
+}
+.user_box .user_img{
+
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    border: 1px solid rgba(23,23,23, .1);
+    margin-right: 5px;
+    border-radius: 2px;
+    background-color: #E6E8FF;
+}
+.user_box .user_img img{
+    height: 100%;
+    width: auto;
+}
+.user_box .user_info{
+    flex-grow: 1;
+}
+.user_info span{
+    display: block;
+}
+.user_info span:first-child{
+    
+    
+    text-transform: capitalize;
+    color: #222222;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+.remove{
+	margin-top:5%;
+	flex-grow: 1;
+	
+}
